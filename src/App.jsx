@@ -4,7 +4,7 @@ import './appStyle.css'
 export const App = () => {
 
     const URL_BASE = 'https://api.themoviedb.org/3/search/movie'
-    const API_KEY = 'YOUR_API_KEY'
+    const API_KEY = 'b201396f87296d18904191a1eb9cfe67'
 
     const [search, setSearch] = useState('')
     const [movie, setMovie] = useState(null)
