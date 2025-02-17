@@ -4,7 +4,7 @@ import './appStyle.css'
 export const App = () => {
 
     const URL_BASE = 'https://api.themoviedb.org/3/search/movie'
-    const API_KEY = 'b201396f87296d18904191a1eb9cfe67'
+    const API_KEY = 'YOUR_API_KEY'
 
     const [search, setSearch] = useState('')
     const [movie, setMovie] = useState(null)
@@ -49,7 +49,7 @@ export const App = () => {
                             <div key={movie.id} className='movieContainer'>
                                 <img className='poster' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.original_title} />
                                 <h2>{movie.title}</h2>
-                                <h4>Populariudad: {Math.floor(movie.popularity)}%</h4>
+                                <h4>Popularidad: {Math.floor(movie.popularity) >= 100 ? 100 : Math.floor(movie.popularity)}%</h4>
                                 <p>{movie.overview}</p>
                             </div>
                         ))}
