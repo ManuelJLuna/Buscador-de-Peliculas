@@ -1,0 +1,10 @@
+/* Fuentes añadidas: Space Grotesk */
+
+
+body{
+  background-color: rgb(20, 10, 10);
+  color: rgb(229, 229, 229);
+  font-family: 'Space Grotesk',sans-serif;
+  padding: 0;
+  margin: 0;
+}
